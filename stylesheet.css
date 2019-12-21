@@ -17,6 +17,7 @@ body {
   align-items: center;
 }
 .titre {
+  text-align: center;
   color: black;
   font-weight: bold;
   font-size: 50px;
@@ -30,6 +31,7 @@ body {
   display: flex;
 }
 .texte {
+  text-align: center;
   color: black;
   font-weight: bold;
   font-size: 40px;

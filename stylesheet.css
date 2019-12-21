@@ -41,7 +41,31 @@ body {
   border-radius: 15px;
   background-color: rgba(255,0,0,0.3);
 }
-.texte:hover {
+.texte-2 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: thick;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.5);
+}
+.texte-3 {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: thick;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+.texte-3:hover {
   border-color: red;
 }
 

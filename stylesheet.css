@@ -5,16 +5,9 @@ html {
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
-
-
 }
 body {
 	margin: 40px;
-}
-#titre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .titre {
   text-align: center;
@@ -27,46 +20,53 @@ body {
   border-radius: 15px;
   background-color: rgba(255,255,255,0.5);
 }
-#texte {
-  display: flex;
-}
 .texte {
-  text-align: center;
   color: black;
   font-weight: bold;
   font-size: 40px;
   border-style: solid;
   border-color: transparent;
-  border-width: thick;
+  border-width: medium;
   border-radius: 15px;
-  background-color: rgba(255,0,0,0.3);
+  background-color: rgba(255, 0, 0, 0.3);
 }
 .texte-2 {
-  text-align: center;
   color: black;
   font-weight: bold;
   font-size: 40px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: thick;
-  border-radius: 10px;
-  background-color: rgba(255,255,255,0.5);
 }
 .texte-3 {
   color: red;
-  text-align: center;
   font-weight: bold;
   font-size: 40px;
   border-style: solid;
   border-color: transparent;
-  border-width: thick;
+  border-radius: 10px;
+}
+#placement {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#texte {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 30px;
   border-radius: 10px;
   background-color: rgba(255,255,255,0.5);
 }
-
-
+#titre {
+  text-align: center;
+}
+.texte:hover {
+  border-color: indigo;
+}
 .texte-3:hover {
-  border-color: red;
+  border-color: indigo;
 }
 
 li {

@@ -33,7 +33,7 @@ body {
 .texte-2 {
   color: black;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   border-style: solid;
   border-color: transparent;
   border-width: 20px;
@@ -100,8 +100,8 @@ a {
   border-style: solid;
 }
 .image3{
-  width: 5%;
-	height: 5%;
+  width: 10%;
+	height: 10%;
 }
 .image3:hover {
   width: 80%;
@@ -109,5 +109,39 @@ a {
 }
 #boite-image {
   display: flex;
+  flex-direction: column;
+  margin-left: 7.5%;
+
+}
+#placementNumero {
+  display: flex;
   flex-direction: row;
+}
+.texte-4 {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.texte-5 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 10px;
+  border-radius: 10px;
+}
+
+
+#boite-commande {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 60%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
+  background-color:  rgba(0, 255, 0, 0.1);
+  border-radius: 10px;
+
 }

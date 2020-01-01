@@ -6,9 +6,50 @@
 </head>
 <body>
 
-    <h1><div id=titre><span class=titre> Étape 2 : </span></div></h1>
+    <h1><div id=titre><span class=titre> Étape 2 : Utiliser la machine virtuelle</span></div></h1>
     <br>
+    <div id=texte><ul>
+      <li><span class=texte-2> - Démarer la machine virtuelle que vous avez créer </span></li>
+      <br><br>
+      <li><span class=texte-2> - Connectez-vous à la machine en SSH puis suivez les instructions. </span></li>
+      <br><br>
+      <span class=texte-5> 1) copiez-coller les commandes : </span>
+      <br><br>
+      <div id=boite-commande>
+        <div id=placement-commande><span class=texte-4> wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> export PATH=$PATH:/usr/local/go/bin </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> export GOPATH=$HOME/go </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> sudo apt-get install git make </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> go get -u github.com/kgretzky/evilginx2  </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> cd $GOPATH/src/github.com/kgretzky/evilginx2 </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> make </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> sudo make install </span></div>
+        <br>
+        <div id=placement-commande><span class=texte-4> sudo evilginx </span></div>
 
+      </div>
+
+
+
+
+
+
+      <br><br>
+      <li><span class=texte-2> </span></li>
+      <br><br>
+    </ul>
+    </ul>
 
 
 

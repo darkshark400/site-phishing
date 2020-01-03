@@ -30,6 +30,16 @@ body {
   border-radius: 15px;
   background-color: rgba(255, 0, 0, 0.3);
 }
+.texte-6 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 7.5px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .texte-2 {
   color: black;
   font-weight: bold;
@@ -46,16 +56,11 @@ body {
   border-color: transparent;
   border-radius: 10px;
 }
-#placement {
-  margin-left: 2.5%;
-  margin-right:2.5%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
+
 #texte {
   text-align: left;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: 8%;
+  margin-right: 8%;
   border-style: solid;
   border-color: transparent;
   border-width: 30px;
@@ -136,9 +141,10 @@ a {
 #boite-commande {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 60%;
+  text-align: left;
   border-width: 10px;
+  margin-left: 2.5%;
+  margin-right: 35%;
   border-style: solid;
   border-color: transparent;
   background-color:  rgba(0, 255, 0, 0.1);

@@ -6,9 +6,69 @@
 </head>
 <body>
 
-    <h1><div id=titre><span class=titre> Étape 3 : </span></div></h1>
+    <h1><div id=titre><span class=titre> Étape 4 : Utiliser la machine virtuelle</span></div></h1>
     <br>
-
+    <div id=texte><ul>
+      <li><span class=texte-2> - Démarer la machine virtuelle que vous avez créer </span></li>
+      <br><br>
+      <li><span class=texte-2> - Connectez-vous à la machine en SSH puis suivez les instructions. </span></li>
+      <br><br>
+      <span class=texte-2> 1) copiez-coller les commandes : </span>
+      <br><br>
+      <ul id=boite-commande>
+        <li class=texte-4> wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz </li>
+        <br>
+        <li class=texte-4> sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz </li>
+        <br>
+        <li class=texte-4> export PATH=$PATH:/usr/local/go/bin </li>
+        <br>
+        <li class=texte-4> export GOPATH=$HOME/go </li>
+        <br>
+        <li class=texte-4> export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin </li>
+        <br>
+        <li class=texte-4> sudo apt-get install git make </li>
+        <br>
+        <li class=texte-4> go get -u github.com/kgretzky/evilginx2  </li>
+        <br>
+        <li class=texte-4> cd $GOPATH/src/github.com/kgretzky/evilginx2 </li>
+        <br>
+        <li class=texte-4> make </li>
+        <br>
+        <li class=texte-4> sudo make install </li>
+        <br>
+        <li class=texte-4> sudo evilginx </li>
+        <br>
+        <li class=texte-4> exit </li>
+        <br>
+        <li class=texte-4> sudo netstat -tpan </span>
+        <br>
+        <li class=texte-4> sudo service systemd-resolved stop </li>
+        <br>
+        <li class=texte-4> sudo nano /etc/resolv.conf </li>
+      </ul>
+      <br>
+      <span class=texte-5> Remplacez l'ip par 8.8.8.8 comme ci-dessous : </li>
+      <br><br>
+      <img id=image3 class=image3 src="instructions/instructions-8.png">
+      <br><br>
+      <span class=texte-5> Ensuite pressez "ctrl+x" apres "maj+y" et enfin "enter" (tout cela pour enregistrer le document). </span>
+      <br><br>
+      <span class=texte-2> 2) Lancez Evilginx puis configurez-le en suivant les commandes ci-dessous : </span>
+      <br><br>
+      <div id=boite-commande>
+      <ul>
+        <li class=texte-4> sudo evilginx </li>
+        <br>
+        <li class=texte-4> config ip  " l'ip de la machine virtuelle "  // exemple : config ip 00.000.000.000 </li>
+        <br>
+        <li class=texte-4> config domain  " le nom de domaine créé "  // exemple : config domain test-phishing.tk </li>
+      </ul>
+      </div>
+    
+      <li><span class=texte-2> </span></li>
+      <br><br>
+    </ul>
+    </ul>
 
 
 

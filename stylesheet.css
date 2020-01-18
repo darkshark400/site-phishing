@@ -6,149 +6,116 @@ html {
     background-attachment: scroll;
     background-position: center;
 }
-body {
-	margin: 40px;
-}
-.titre {
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  font-size: 50px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: thick;
-  border-radius: 15px;
-  background-color: rgba(255,255,255,0.5);
-}
-.texte {
-  color: black;
-  font-weight: bold;
-  font-size: 40px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: medium;
-  border-radius: 15px;
-  background-color: rgba(255, 0, 0, 0.3);
-}
-.texte-6 {
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 7.5px;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.texte-2 {
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 20px;
-}
-.texte-3 {
-  color: red;
-  font-weight: bold;
-  font-size: 40px;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 10px;
-}
-
-#texte {
-  text-align: left;
-  margin-left: 8%;
-  margin-right: 8%;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 30px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255,0.5);
-}
-#titre {
-  text-align: center;
-}
-.texte:hover {
-  border-color: indigo;
-}
-.texte-3:hover {
-  border-color: indigo;
-}
-
-li {
-   list-style: none;
-
-}
 a {
   text-decoration: none;
 }
-#image1 {
-	display: block;
+ul {
+  list-style: none;
+}
+.position-titre {
+  display: block;
+  text-align: center;
+}
+.titre-1 {
+  color: black;
+  border-style: none;
+  font-weight: normal;
+  font-size: 55px;
+  border-radius: 2.5px;
+  padding: 7.5px;
+  background: rgba(255,255,255,0.5);
+}
+.lien {
+  color: red;
+  border-width: medium;
+  border-top-style: double;
+  border-bottom-style: double;
+  padding: 2px;
+  border-top-color: red;
+  border-bottom-color: red;
+}
+:hover.lien {
+  color: darkred;
+  border-width: thick;
+  border-top-style: double;
+  border-bottom-style: double;
+  border-top-color: darkred;
+  border-bottom-color: darkred;
+}
+.fond-liste{
+  display: block;
+  margin: auto;
+  width: 80%;
+  text-align: left;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(255,255,255,0.4);
+  padding: 20px;
+}
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.texte-2 {
+  color: black;
+  font-size: 30px;
+  padding-right: 20px;
+}
+.texte-1 {
+  color: black;
+  font-size: 30px;
+
+}
+.image-1{
+  width: 20%;
+	height: 20%;
+  border-width: thin;
+  border-radius: 4px;
+  border-color: red;
+  border-style: solid;
+}
+:hover.image-1 {
+  width: 90%;
+	height: 90%;
+}
+.image-2 {
+  display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 260px;
 	height: 60px;
 }
-#image2 {
-	display: block;
+.image-3 {
+  display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 600px;
-	height: 400px;
+	width: 500px;
+	height: 300px;
 }
-#image3 {
-  display: block;
-  border-radius: 10px;
-  border-color: red;
-  border-style: solid;
-}
-.image3{
-  width: 10%;
-	height: 10%;
-}
-.image3:hover {
-  width: 80%;
-	height: 60%;
-}
-#boite-image {
-  display: flex;
-  flex-direction: column;
-  margin-left: 7.5%;
-
-}
-#placementNumero {
-  display: flex;
-  flex-direction: row;
-}
-.texte-4 {
+.titre-2 {
   color: black;
-  font-weight: bold;
-  font-size: 15px;
+  border-style: none;
+  font-weight: normal;
+  font-size: 55px;
+  border-radius: 2.5px;
+  padding: 7.5px;
 }
-.texte-5 {
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 10px;
-  border-radius: 10px;
-  margin-left: 2.5%;
+.onglet {
+  color: red;
+  border-width: medium;
+  border-top-style: double;
+  border-left-style: double;
+  padding: 2px;
+  border-top-color: red;
+  border-left-color: red;
 }
-
-
-#boite-commande {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  border-width: 10px;
-  margin-left: 2.5%;
-  margin-right: 35%;
-  border-style: solid;
-  border-color: transparent;
-  background-color:  rgba(0, 255, 0, 0.1);
-  border-radius: 10px;
-
+:hover.onglet {
+  color: darkred;
+  border-width: thick;
+  border-top-style: double;
+  border-left-style: double;
+  border-top-color: darkred;
+  border-left-color: darkred;
 }

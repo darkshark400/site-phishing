@@ -17,6 +17,7 @@ ul {
   text-align: center;
 }
 .titre-1 {
+  display: inline;
   color: black;
   border-style: none;
   font-weight: normal;
@@ -37,21 +38,20 @@ ul {
 :hover.lien {
   color: darkred;
   border-width: thick;
-  border-top-style: double;
-  border-bottom-style: double;
+  border-style: double;
   border-top-color: darkred;
   border-bottom-color: darkred;
 }
 .fond-liste{
   display: block;
   margin: auto;
-  width: 80%;
+  width: 80vw;
   text-align: left;
   border-style: none;
   border-radius: 5px;
   padding: 5px;
   background: rgba(255,255,255,0.4);
-  padding: 20px;
+  padding: 0.25vw;
 }
 .container-1 {
   display: flex;
@@ -65,16 +65,16 @@ ul {
 }
 .texte-1 {
   color: black;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   font-weight: normal;
 }
 .image-1{
   width: 20%;
 	height: 20%;
   border-width: thin;
+  border-style: solid;
   border-radius: 4px;
   border-color: red;
-  border-style: solid;
 }
 :hover.image-1 {
   width: 90%;
@@ -110,7 +110,6 @@ ul {
   border-left-style: double;
   border-right-style: none;
   padding: 2px;
-
 }
 :hover.onglet {
   color: darkred;
@@ -119,14 +118,13 @@ ul {
   border-bottom-style: none;
   border-left-style: none;
   border-right-style: double;
-
 }
 .boite-commande {
   display: inline-block;
   text-align: left;
-  border-width: 10px;
+  padding: 2vw;
   border-style: solid;
-  margin-left: 2.5%;
+  margin-left: 2vw;
   border-color: transparent;
   background-color:  rgba(0, 255, 0, 0.1);
   border-radius: 10px;
@@ -134,6 +132,26 @@ ul {
 .commande-1 {
   display: block;
   color: black;
-  font-size: 1vw;
+  font-size: 1.25vw;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: left;
+}
+.border-navbar {
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent;
+  padding: 2vw;
+  background-color:  rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
 
 }

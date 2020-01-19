@@ -20,7 +20,7 @@ ul {
   color: black;
   border-style: none;
   font-weight: normal;
-  font-size: 55px;
+  font-size: 3vw;
   border-radius: 2.5px;
   padding: 7.5px;
   background: rgba(255,255,255,0.5);
@@ -60,13 +60,13 @@ ul {
 }
 .texte-2 {
   color: black;
-  font-size: 30px;
+  font-size: 1vw;
   padding-right: 20px;
 }
 .texte-1 {
   color: black;
-  font-size: 30px;
-
+  font-size: 1.5vw;
+  font-weight: normal;
 }
 .image-1{
   width: 20%;
@@ -98,24 +98,42 @@ ul {
   color: black;
   border-style: none;
   font-weight: normal;
-  font-size: 55px;
+  font-size: xx-large;
   border-radius: 2.5px;
   padding: 7.5px;
 }
 .onglet {
   color: red;
-  border-width: medium;
-  border-top-style: double;
+  border-width: thick;
+  border-top-style: none;
+  border-bottom-style: double;
   border-left-style: double;
+  border-right-style: none;
   padding: 2px;
-  border-top-color: red;
-  border-left-color: red;
+
 }
 :hover.onglet {
   color: darkred;
   border-width: thick;
   border-top-style: double;
-  border-left-style: double;
-  border-top-color: darkred;
-  border-left-color: darkred;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: double;
+
+}
+.boite-commande {
+  display: inline-block;
+  text-align: left;
+  border-width: 10px;
+  border-style: solid;
+  margin-left: 2.5%;
+  border-color: transparent;
+  background-color:  rgba(0, 255, 0, 0.1);
+  border-radius: 10px;
+}
+.commande-1 {
+  display: block;
+  color: black;
+  font-size: 1vw;
+
 }

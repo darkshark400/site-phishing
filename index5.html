@@ -5,72 +5,67 @@
     <title>Tutoriel : Créer et héberger le clone parfait d’un site. page 2</title>
 </head>
 <body>
-
-    <h1><div id=titre><span class=titre> Étape 4 : Utiliser la machine virtuelle</span></div></h1>
-    <br>
-    <div id=texte><ul>
-      <li><span class=texte-2> - Démarer la machine virtuelle que vous avez créer </span></li>
+    <h1><div class=position-titre><span class=titre-1> Étape 4 : Utiliser la machine virtuelle</span></div></h1>
+    <br><br>
+    <div class=fond-liste>
+    <ul>
+      <li><span class=texte-1> - Démarer la machine virtuelle que vous avez créée </span></li>
       <br><br>
-      <li><span class=texte-2> - Connectez-vous à la machine en SSH puis suivez les instructions. </span></li>
+      <li><span class=texte-1> - Connectez-vous à la machine en SSH puis suivez les instructions. </span></li>
       <br><br>
-      <span class=texte-5> 1) copiez-coller les commandes : </span>
+      <li><span class=texte-1> 1) copiez-coller les commandes : </span><li>
       <br><br>
-      <ul id=boite-commande>
-        <li class=texte-4> wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz </li>
+      <ul class=boite-commande>
+        <li class=commande-1> wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz </li>
         <br>
-        <li class=texte-4> sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz </li>
+        <li class=commande-1> sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz </li>
         <br>
-        <li class=texte-4> export PATH=$PATH:/usr/local/go/bin </li>
+        <li class=commande-1> export PATH=$PATH:/usr/local/go/bin </li>
         <br>
-        <li class=texte-4> export GOPATH=$HOME/go </li>
+        <li class=commande-1> export GOPATH=$HOME/go </li>
         <br>
-        <li class=texte-4> export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin </li>
+        <li class=commande-1> export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin </li>
         <br>
-        <li class=texte-4> sudo apt-get install git make </li>
+        <li class=commande-1> sudo apt-get install git make </li>
         <br>
-        <li class=texte-4> go get -u github.com/kgretzky/evilginx2  </li>
+        <li class=commande-1> go get -u github.com/kgretzky/evilginx2  </li>
         <br>
-        <li class=texte-4> cd $GOPATH/src/github.com/kgretzky/evilginx2 </li>
+        <li class=commande-1> cd $GOPATH/src/github.com/kgretzky/evilginx2 </li>
         <br>
-        <li class=texte-4> make </li>
+        <li class=commande-1> make </li>
         <br>
-        <li class=texte-4> sudo make install </li>
+        <li class=commande-1> sudo make install </li>
         <br>
-        <li class=texte-4> sudo evilginx </li>
+        <li class=commande-1> sudo evilginx </li>
         <br>
-        <li class=texte-4> exit </li>
+        <li class=commande-1> exit </li>
         <br>
-        <li class=texte-4> sudo netstat -tpan </span>
+        <li class=commande-1> sudo netstat -tpan </span>
         <br>
-        <li class=texte-4> sudo service systemd-resolved stop </li>
+        <li class=commande-1> sudo service systemd-resolved stop </li>
         <br>
-        <li class=texte-4> sudo nano /etc/resolv.conf </li>
+        <li class=commande-1> sudo nano /etc/resolv.conf </li>
       </ul>
+      <br><br><br>
+      <div class=texte-1> Remplacez l'ip par 8.8.8.8 comme ci-dessous : </div>
       <br>
-      <span class=texte-5> Remplacez l'ip par 8.8.8.8 comme ci-dessous : </li>
+      <img class=image-1 src="instructions/instructions-8.png">
       <br><br>
-      <img id=image3 class=image3 src="instructions/instructions-8.png">
+      <span class=texte-2> Ensuite pressez "ctrl+x" puis "maj+y" et enfin "enter" (tout cela pour enregistrer le document). </span>
       <br><br>
-      <span class=texte-5> Ensuite pressez "ctrl+x" puis "maj+y" et enfin "enter" (tout cela pour enregistrer le document). </span>
+      <span class=texte-1> 2) Lancez Evilginx puis configurez-le en suivant les commandes ci-dessous : </span>
       <br><br>
-      <span class=texte-5> 2) Lancez Evilginx puis configurez-le en suivant les commandes ci-dessous : </span>
-      <br><br>
-      <div id=boite-commande>
+      <div class=boite-commande>
       <ul>
-        <li class=texte-4> sudo evilginx </li>
+        <li class=commande-1> sudo evilginx </li>
         <br>
-        <li class=texte-4> config ip  " l'ip de la machine virtuelle "  // exemple : config ip 00.000.000.000 </li>
+        <li class=commande-1> config ip  " l'ip de la machine virtuelle "  // exemple : config ip 00.000.000.000 </li>
         <br>
-        <li class=texte-4> config domain  " le nom de domaine créé "  // exemple : config domain test-phishing.tk </li>
+        <li class=commande-1> config domain  " le nom de domaine créé "  // exemple : config domain test-phishing.tk </li>
       </ul>
       </div>
-    </ul>
-    </ul>
+
   </div>
-  <h1><div id=titre><span class=titre><a href="index2.html"><span class=texte-3>  Retour au Tutoriel  </span></a></span></div></h1>
-
-
-
+  <h1><span class=position-titre><a href="index2.html"><span class=onglet> Retour au Tutoriel </span></a></span></h1>
 </body>
-
 </html>

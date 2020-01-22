@@ -22,7 +22,7 @@ ul {
   border-style: none;
   font-weight: normal;
   font-size: 3vw;
-  border-radius: 2.5px;
+  border-radius: 0.5vw;
   padding: 7.5px;
   background: rgba(255,255,255,0.5);
 }
@@ -48,10 +48,9 @@ ul {
   width: 80vw;
   text-align: left;
   border-style: none;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 1vw;
+  padding: 2vw;
   background: rgba(255,255,255,0.4);
-  padding: 0.25vw;
 }
 .container-1 {
   display: flex;
@@ -61,38 +60,26 @@ ul {
 .texte-2 {
   color: black;
   font-size: 1vw;
-  padding-right: 20px;
+  padding-left: 4vw;
 }
 .texte-1 {
   color: black;
   font-size: 1.75vw;
   font-weight: normal;
 }
-.image-1{
-  width: 20%;
-	height: 20%;
-  border-width: thin;
-  border-style: solid;
-  border-radius: 4px;
-  border-color: red;
-}
-:hover.image-1 {
-  width: 90%;
-	height: 90%;
-}
 .image-2 {
   display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 260px;
-	height: 60px;
+	width: 18vw;
+	height: 4vw;
 }
 .image-3 {
   display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 500px;
-	height: 300px;
+	width: 30vw;
+	height: 20vw;
 }
 .titre-2 {
   color: black;
@@ -109,7 +96,6 @@ ul {
   border-bottom-style: double;
   border-left-style: double;
   border-right-style: none;
-  padding: 2px;
 }
 :hover.onglet {
   color: darkred;
@@ -135,7 +121,6 @@ ul {
   font-size: 1.25vw;
 }
 .dropdown {
-  position: relative;
   display: inline-block;
 }
 .dropdown-content {
@@ -143,15 +128,85 @@ ul {
 }
 
 .dropdown:hover .dropdown-content {
+  position: relative;
   display: block;
-  text-align: left;
+  text-align: center;
+  animation-name: aggrandis;
+  animation-duration: 0.4s;
+  animation-delay: 0.01s;
+
 }
 .border-navbar {
-  display: inline-block;
+  display: block;
   border-style: solid;
   border-color: transparent;
-  padding: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   background-color:  rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
+  border-radius: 1vw;
+}
+.titre-4 {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+  border-style: none;
+  font-weight: normal;
+  font-size: 3vw;
+  border-top-right-radius:  0.5vw;
+  border-bottom-right-radius:  0.5vw;
+  padding: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background: rgba(255,255,255,0.5);
+}
 
+.titre-5 {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+  border-style: none;
+  font-weight: normal;
+  font-size: 3vw;
+  border-top-left-radius:  0.5vw;
+  border-bottom-left-radius:  0.5vw;
+  padding: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background: rgba(255,255,255,0.5);
+}
+.image-1{
+  width: 20%;
+	height: 20%;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 0.5vw;
+  border-color: red;
+  margin-left: 4vw;
+}
+:hover.image-1 {
+  width: 90%;
+  height: 90%;
+}
+@keyframes aggrandis {
+  0%   {transform: rotate(0deg);}
+  5%   {transform: rotate(20deg);}
+  10%  {transform: rotate(40deg);}
+  15%  {transform: rotate(60deg);}
+  20%  {transform: rotate(80deg);}
+  25%  {transform: rotate(100deg);}
+  30%  {transform: rotate(120deg);}
+  35%  {transform: rotate(140deg);}
+  40%  {transform: rotate(160deg);}
+  45%  {transform: rotate(180deg);}
+  50%  {transform: rotate(200deg);}
+  55%  {transform: rotate(220deg);}
+  60%  {transform: rotate(240deg);}
+  65%  {transform: rotate(260deg);}
+  70%  {transform: rotate(280deg);}
+  75%  {transform: rotate(300deg);}
+  85%  {transform: rotate(320deg);}
+  95%  {transform: rotate(340deg);}
+  100%  {transform: rotate(360deg);}
 }

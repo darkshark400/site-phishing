@@ -83,11 +83,11 @@ ul {
 }
 .titre-2 {
   color: black;
+  display: inline;
   border-style: none;
   font-weight: normal;
-  font-size: xx-large;
-  border-radius: 2.5px;
-  padding: 7.5px;
+  font-size: 2vw;
+  padding: 1.5vw;
 }
 .onglet {
   color: red;
@@ -126,16 +126,24 @@ ul {
 .dropdown-content {
   display: none;
 }
-
-.dropdown:hover .dropdown-content {
-  position: relative;
+.dropdown:hover .dropdown-content{
   display: block;
-  text-align: center;
-  animation-name: aggrandis;
-  animation-duration: 0.4s;
-  animation-delay: 0.01s;
-
 }
+.dropdown:hover .drop-1,.drop-2,.drop-3{
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content,.drop-1,.drop-2,.drop-3{
+  position: relative;
+  text-align: center;
+  animation: move 0.75s;
+  /*animation-name: aggrandis;
+  animation-duration: 0.4s;
+  animation-delay: 0.01s;*/
+}
+.drop-1{
+  animation: agrandis 0.5s;
+}
+
 .border-navbar {
   display: block;
   border-style: solid;
@@ -162,6 +170,22 @@ ul {
   background: rgba(255,255,255,0.5);
 }
 
+.onglet-1 {
+  color: red;
+  border-width: thick;
+  border-top-style: none;
+  border-bottom-style: double;
+  border-left-style: double;
+  border-right-style: none;
+}
+:hover.dropdown .onglet-1 {
+  color: darkred;
+  border-width: thick;
+  border-top-style: double;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: double;
+}
 .titre-5 {
   display: inline-block;
   vertical-align: top;
@@ -189,7 +213,7 @@ ul {
   width: 90%;
   height: 90%;
 }
-@keyframes aggrandis {
+@keyframes agrandis {
   0%   {transform: rotate(0deg);}
   5%   {transform: rotate(20deg);}
   10%  {transform: rotate(40deg);}
@@ -206,7 +230,13 @@ ul {
   65%  {transform: rotate(260deg);}
   70%  {transform: rotate(280deg);}
   75%  {transform: rotate(300deg);}
-  85%  {transform: rotate(320deg);}
-  95%  {transform: rotate(340deg);}
+  80%  {transform: rotate(315deg);}
+  85%  {transform: rotate(325deg);}
+  90%  {transform: rotate(335deg);}
+  95%  {transform: rotate(350deg);}
   100%  {transform: rotate(360deg);}
+}
+@keyframes move {
+  from {top: -200px;opacity: -4;}
+  to {top: 0;opacity: 1;}
 }

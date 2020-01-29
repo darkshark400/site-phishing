@@ -6,6 +6,10 @@ html {
     background-attachment: scroll;
     background-position: center;
 }
+.fond-1 {
+  background-image: none;
+  background-color: rgba(165, 255, 165, 0.5);
+}
 a {
   text-decoration: none;
 }
@@ -55,12 +59,12 @@ ul {
 .container-1 {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: 4vw;
 }
 .texte-2 {
   color: black;
   font-size: 1vw;
-  padding-left: 4vw;
+  margin-left: 4vw;
 }
 .texte-1 {
   color: black;
@@ -212,6 +216,64 @@ ul {
 :hover.image-1 {
   width: 90%;
   height: 90%;
+}
+.image-4 {
+  border-radius: 4vw;
+  width: 8vw;
+  height: 8vw;
+}
+.video-1 {
+  border-radius: 2vw;
+  margin: 1vw;
+  display: inline;
+  width: 28vw;
+  height: 15.9vw;
+}
+.inline-1 {
+  display: inline-block;
+}
+.titre-6 {
+  vertical-align: top;
+  color: blue;
+  font-weight: normal;
+  font-size: 3vw;
+  border-style: none;
+  border-color: none;
+  border-width: medium;
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 1vw;
+  background-color: DeepSkyBlue;
+}
+
+:hover.image-4 {
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 4vw;
+}
+.container-titre-6 {
+  display: none;
+  margin: 1.1vw;
+}
+.lien-1:hover .container-titre-6 {
+  display: block;
+  position: relative;
+  animation: move 0.75s;
+}
+:hover.titre-6 {
+  color: darkblue;
+  border-color: darkblue;
+  border-style: solid;
+}
+.texte-3 {
+  margin-left: 10vw;
+  text-align: left;
+  color: black;
+  font-size: 1vw;
+}
+.frame-1 {
+  width: 40vw;
+  margin-left: 10vw;
 }
 @keyframes agrandis {
   0%   {transform: rotate(0deg);}

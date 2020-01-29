@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html class=fond-1>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>code-arduino</title>
+</head>
+<body>
+    <div>
+    #include IRremote.h<br>
+    IRsend irsend;<br>
+    const int pin1 = 10;<br>
+    const int pin2 = 9;<br>
+    const int pin3 = 8;<br>
+    const int pin4 = 5;<br>
+    const int pin5 = 7;<br>
+    const int pin6 = 6;<br>
+    int val1;<br>
+    int val2;<br>
+    int val3;<br>
+    int val4;<br>
+    int val5;<br>
+    int val6;<br>
+    void setup() {<br>
+      Serial.begin(9600);<br>
+      Serial.print("Starting");<br>
+      pinMode(pin1, INPUT);<br>
+      pinMode(pin2, INPUT);<br>
+      pinMode(pin3, INPUT);<br>
+      pinMode(pin4, INPUT);<br>
+      pinMode(pin5, INPUT);<br>
+      pinMode(pin6, INPUT);<br>
+    }<br>
+    void loop() {<br>
+      val1 = 0;<br>
+      val2 = 0;<br>
+      val3 = 0;<br>
+      val4 = 0;<br>
+      val5 = 0;<br>
+      val6 = 0;<br>
+      val1 = digitalRead(pin1);<br>
+      val2 = digitalRead(pin2);<br>
+      val3 = digitalRead(pin3);<br>
+      val4 = digitalRead(pin4);<br>
+      val5 = digitalRead(pin5);<br>
+      val6 = digitalRead(pin6);<br>
+      Serial.print("val1 : ");<br>
+      Serial.print(val1);<br>
+      Serial.print("/   ");<br>
+      Serial.print("val2 : ");<br>
+      Serial.print(val2);<br>
+      Serial.print("/   ");<br>
+      Serial.print("val3 : ");<br>
+      Serial.print(val3);<br>
+      Serial.print("/   ");<br>
+      Serial.print("val4 : ");<br>
+      Serial.print(val4);<br>
+      Serial.print("/   ");<br>
+      Serial.print("val5 : ");<br>
+      Serial.print(val5);<br>
+      Serial.print("/   ");<br>
+      Serial.print("val6 : ");<br>
+      Serial.print(val6);<br>
+      Serial.println();<br>
+      delay(100);<br>
+      if (val1 == HIGH){<br>
+        for (int i = 0; i < 3; i++) {<br>
+          irsend.sendNEC(0xC1AA09F6, 32);<br>
+          Serial.println("on/off");<br>
+          delay(40);<br>
+        }<br>
+      }<br>
+      else if (val6 == HIGH){<br>
+        for (int i = 0; i < 3; i++) {<br>
+          irsend.sendNEC(0xC1AA49B6, 32);<br>
+          Serial.println("freeze");<br>
+          delay(40);<br>
+        }<br>
+      }<br>
+      else if (val2 == HIGH){<br>
+        for (int i = 0; i < 3; i++) {<br>
+          irsend.sendNEC(0xC1AA11EE, 32);<br>
+          Serial.println("zoom up");<br>
+          delay(40);<br>
+        }<br>
+      }<br>
+      else if (val3 == HIGH){<br>
+        for (int i = 0; i < 3; i++) {<br>
+          irsend.sendNEC(0xC1AA916E, 32);<br>
+          Serial.println("zoom down");<br>
+          delay(40);<br>
+        }<br>
+      }<br>
+      else if (val4 == HIGH){<br>
+        for (int i = 0; i < 3; i++) {<br>
+          irsend.sendNEC(0xC1AA19E6, 32);<br>
+          Serial.println("vol up");<br>
+          delay(40);<br>
+        }<br>
+      }<br>
+      else if (val5 ==  HIGH){<br>
+        for (int i = 0; i < 3; i++) {<br>
+          irsend.sendNEC(0xC1AA9966, 32);<br>
+          Serial.println("vol down");<br>
+          delay(40);<br>
+        }<br>
+      }<br>
+    }<br>
+    </div>
+</body>
+</html>

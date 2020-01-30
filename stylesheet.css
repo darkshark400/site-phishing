@@ -109,21 +109,6 @@ ul {
   border-left-style: none;
   border-right-style: double;
 }
-.boite-commande {
-  display: inline-block;
-  text-align: left;
-  padding: 2vw;
-  border-style: solid;
-  margin-left: 2vw;
-  border-color: transparent;
-  background-color:  rgba(0, 255, 0, 0.1);
-  border-radius: 10px;
-}
-.commande-1 {
-  display: block;
-  color: black;
-  font-size: 1.25vw;
-}
 .dropdown {
   display: inline-block;
 }
@@ -271,6 +256,12 @@ ul {
   color: black;
   font-size: 1vw;
 }
+.texte-4 {
+  margin-left: 10vw;
+  text-align: left;
+  color: black;
+  font-size: 2vw;
+}
 .frame-1 {
   width: 40vw;
   margin-left: 10vw;
@@ -301,4 +292,31 @@ ul {
 @keyframes move {
   from {left: -600px;opacity: -2;}
   to {left: 0;opacity: 1;}
+}
+.area-1 {
+  display: block;
+  height: 20vw;
+  width: 30vw;
+  background-color: rgba(0, 255, 0, 0.1);
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-left: 2vw;
+}
+.area-2 {
+  display: block;
+  height: 10vw;
+  width: 40vw;
+  background-color: rgba(0, 255, 0, 0.1);
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-left: 2vw;
+}
+.area-3 {
+  display: block;
+  height: 40vw;
+  width: 40vw;
+  background-color: rgba(0, 255, 0, 0.1);
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-left: 10vw;
 }

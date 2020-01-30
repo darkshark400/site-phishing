@@ -17,49 +17,129 @@
     </div>
   </span><span class="titre-4"> Martin Saldinger </span>
   </div>
-    <h2></h2>
-    <ul class=fond-liste>
-      <li class="position-titre"><div class=lien-1><img class=image-4 src="profile.png"/><a href="https://www.youtube.com/channel/UCK3e-NebEU6nKgr6oH34lAg"><div class=container-titre-6><span class="titre-6"> Abonnez-vous ! </span></div></a></div></li>
-      <br><br><br><br>
-      <div class=position-titre>
-      <li class="inline-1"><iframe class=video-1 width="560" height="315" src="https://www.youtube.com/embed/1XqnVZXsURk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-      <li class="inline-1"><iframe class=video-1 width="560" height="315" src="https://www.youtube.com/embed/EL003hcXuao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-      </div>
-      <br><br>
-      <li><div class=texte-3>J'ai eu mon brevet mention tres bien sans travailler</div></li>
-      <br>
-      <li><div class=texte-3>Je sais pirater quelques trucs<li>
-      <br>
-      <li><div class=texte-3>J'ai développé un appareil capable de copier et réenvoyer la séquence héxadécimale émise par une télécommande infrarouge. <li>
-      <br>
-      <li><div class=texte-3> Voici le code de la télécommande :<li>
-      <iframe class=frame-1 src="code-arduino.html" width="1000" height="500"></iframe>
-      <br>
-      <li><div class=texte-3>    <li>
-      <br>
-      <li><div class=texte-3>    <li>
-      <br>
-      <li><div class=texte-3>    <li>
-      <br>
-      <li><div class=texte-3>    <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <br>
+    <div class=fond-liste>
+      <ul><p class=texte-4> Compétences : </p><li>
+        <li><p class=texte-3> - Anglais Cambridge</p><li>
+        <li><p class=texte-3> - Developpement HTML, CSS et C (arduino)</p><li>
+        <li><p class=texte-3> - Connaissances en piratage et contournement technique d'objets divers (télécommande)</p><li>
+      </ul>
+      <ul><p class=texte-4> Expérience : </p><li>
+        <li><p class=texte-3> - Les Olympiades de Mathématiques</p><li>
+        <li><p class=texte-3> - J'ai développé un appareil capable de copier et réenvoyer la séquence héxadécimale émise par une télécommande infrarouge. </p><li>
+        <li><p class=texte-3> Voici le code de la télécommande : </p><li>
+        <br>
+        <textarea class=area-3>#include IRremote.h
+    IRsend irsend;
+    const int pin1 = 10;
+    const int pin2 = 9;
+    const int pin3 = 8;
+    const int pin4 = 5;
+    const int pin5 = 7;
+    const int pin6 = 6;
+    int val1;
+    int val2;
+    int val3;
+    int val4;
+    int val5;
+    int val6;
+    void setup() {
+    Serial.begin(9600);
+    Serial.print("Starting");
+    pinMode(pin1, INPUT);
+    pinMode(pin2, INPUT);
+    pinMode(pin3, INPUT);
+    pinMode(pin4, INPUT);
+    pinMode(pin5, INPUT);
+    pinMode(pin6, INPUT);
+    }
+    void loop() {
+    val1 = 0;
+    val2 = 0;
+    val3 = 0;
+    val4 = 0;
+    val5 = 0;
+    val6 = 0;
+    val1 = digitalRead(pin1);
+    val2 = digitalRead(pin2);
+    val3 = digitalRead(pin3);
+    val4 = digitalRead(pin4);
+    val5 = digitalRead(pin5);
+    val6 = digitalRead(pin6);
+    Serial.print("val1 : ");
+    Serial.print(val1);
+    Serial.print("/ ");
+    Serial.print("val2 : ");
+    Serial.print(val2);
+    Serial.print("/ ");
+    Serial.print("val3 : ");
+    Serial.print(val3);
+    Serial.print("/ ");
+    Serial.print("val4 : ");
+    Serial.print(val4);
+    Serial.print("/ ");
+    Serial.print("val5 : ");
+    Serial.print(val5);
+    Serial.print("/ ");
+    Serial.print("val6 : ");
+    Serial.print(val6);
+    Serial.println();
+    delay(100);
+    if (val1 == HIGH){
+    for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0xC1AA09F6, 32);
+    Serial.println("on/off");
+    delay(40);
+    }
+    }
+    else if (val6 == HIGH){
+    for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0xC1AA49B6, 32);
+    Serial.println("freeze");
+    delay(40);
+    }
+    }
+    else if (val2 == HIGH){
+    for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0xC1AA11EE, 32);
+    Serial.println("zoom up");
+    delay(40);
+    }
+    }
+    else if (val3 == HIGH){
+    for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0xC1AA916E, 32);
+    Serial.println("zoom down");
+    delay(40);
+    }
+    }
+    else if (val4 == HIGH){
+    for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0xC1AA19E6, 32);
+    Serial.println("vol up");
+    delay(40);
+    }
+    }
+    else if (val5 == HIGH){
+    for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0xC1AA9966, 32);
+    Serial.println("vol down");
+    delay(40);
+    }
+    }
+    }</textarea>
+    <li><p class=texte-3> - J'ai des connaissances en montage vidéo </p><li>
+    <li><p class=texte-3> - J'ai une chaine YouTube</p><li>
+    <br>
+    <li class="position-titre"><div class=lien-1><img class=image-4 src="profile.png"/><a href="https://www.youtube.com/channel/UCK3e-NebEU6nKgr6oH34lAg"><div class=container-titre-6><span class="titre-6"> Abonnez-vous ! </span></div></a></div></li>
+    <br><br><br><br>
+    <div class=position-titre>
+    <li class="inline-1"><iframe class=video-1 width="560" height="315" src="https://www.youtube.com/embed/1XqnVZXsURk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    <li class="inline-1"><iframe class=video-1 width="560" height="315" src="https://www.youtube.com/embed/EL003hcXuao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </div>
     </ul>
-
+    <br><br>
     <h1><span class=position-titre><a href="#hautdepage"><span class="onglet texte-1"> Haut de page </span></a></span></h1>
+  </div>
 </body>
 </html>

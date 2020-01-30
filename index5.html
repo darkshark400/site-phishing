@@ -24,43 +24,27 @@
   <br><br>
     <div class=fond-liste>
     <ul>
-      <li><span class=texte-1> - Démarrez la machine virtuelle que vous avez créée </span></li>
-      <br><br>
-      <li><span class=texte-1> - Connectez-vous à la machine en SSH puis suivez les instructions </span></li>
-      <br><br>
-      <li><span class=texte-1> - Copiez-collez les commandes suivantes : </span><li>
-      <br><br>
-      <ul class=boite-commande>
-        <li class=commande-1> wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz </li>
-        <br>
-        <li class=commande-1> sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz </li>
-        <br>
-        <li class=commande-1> export PATH=$PATH:/usr/local/go/bin </li>
-        <br>
-        <li class=commande-1> export GOPATH=$HOME/go </li>
-        <br>
-        <li class=commande-1> export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin </li>
-        <br>
-        <li class=commande-1> sudo apt-get install git make </li>
-        <br>
-        <li class=commande-1> go get -u github.com/kgretzky/evilginx2  </li>
-        <br>
-        <li class=commande-1> cd $GOPATH/src/github.com/kgretzky/evilginx2 </li>
-        <br>
-        <li class=commande-1> make </li>
-        <br>
-        <li class=commande-1> sudo make install </li>
-        <br>
-        <li class=commande-1> sudo evilginx </li>
-        <br>
-        <li class=commande-1> exit </li>
-        <br>
-        <li class=commande-1> sudo netstat -tpan </span>
-        <br>
-        <li class=commande-1> sudo service systemd-resolved stop </li>
-        <br>
-        <li class=commande-1> sudo nano /etc/resolv.conf </li>
-      </ul>
+      <li><p class=texte-1> - Démarrez la machine virtuelle que vous avez créée </p></li>
+      <br>
+      <li><p class=texte-1> - Connectez-vous à la machine en SSH puis suivez les instructions </p></li>
+      <br>
+      <li><p class=texte-1> - Copiez-collez les commandes suivantes : </p><li>
+      <br>
+      <textarea class=area-1>wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+sudo apt-get install git make
+go get -u github.com/kgretzky/evilginx2
+cd $GOPATH/src/github.com/kgretzky/evilginx2
+make
+sudo make install
+sudo evilginx
+exit
+sudo netstat -tpan
+sudo service systemd-resolved stop
+sudo nano /etc/resolv.conf</textarea>
       <br><br><br>
       <div class=texte-2> - Remplacez l'ip par 8.8.8.8 comme ci-dessous : </div>
       <br>
@@ -70,19 +54,11 @@
       <br><br>
       <span class=texte-1> - Lancez Evilginx puis configurez-le en suivant les commandes suivantes : </span>
       <br><br>
-      <div class=boite-commande>
-      <ul>
-        <li class=commande-1> sudo evilginx </li>
-        <br>
-        <li class=commande-1> config ip  " l'ip de la machine virtuelle "  // exemple : config ip 00.000.000.000 </li>
-        <br>
-        <li class=commande-1> config domain  " le nom de domaine créé "  // exemple : config domain test-phishing.tk </li>
-      </ul>
-      </div>
-      <br><br>
-      <div class=texte-2> - Le reste c'est illégal donc je dis pas ^^ </div>
-
-
+      <textarea class=area-2>sudo evilginx
+config ip " l'ip de la machine virtuelle " // exemple : config ip 00.000.000.000
+config domain " le nom de domaine créé " // exemple : config domain test-phishing.tk</textarea>
+      <br>
+      <div class=texte-2> - Le reste est illégal donc à vos risques et périls ( ͡° ͜ʖ ͡°) </div>
   </div>
   <h1><span class=position-titre><a href="#hautdepage"><span class="onglet texte-1"> Haut de page </span></a></span></h1>
 </body>
